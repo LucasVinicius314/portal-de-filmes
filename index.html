@@ -62,8 +62,8 @@
   <!-- End Navbar -->
 
   <main>
+    <!-- Lançamentos -->
     <div class="container-fluid bg-light pt-3">
-      <!-- Lançamentos -->
       <h1 class="display-1 text-center mb-5">Lançamentos</h1>
       <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -275,7 +275,41 @@
           <!-- End A Whisker Away -->
         </div>
       </div>
-      <!-- End Lançamentos -->
+    </div>
+    <!-- End Lançamentos -->
+    <div class="container pt-4">
+      <!-- Em Destaque -->
+      <div class="d-flex flex-row justify-content-between">
+        <h1 class="display-6 flex-grow" id="destaque">Em destaque</h1>
+        <form class="d-flex">
+          <div class="input-group">
+            <select class="form-control flex-shrink">
+              <option value="todos">TODOS</option>
+              <option value="aventura">AVENTURA</option>
+              <option value="romance">ROMANCE</option>
+              <option value="comedia">COMÉDIA</option>
+            </select>
+            <button class="btn btn-outline-secondary" type="button">
+              <span class="mdi mdi-chevron-down"></span>
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-3 p-2 align-items-center">
+          <img src="img/kaguya-sama.jpg" class="img-fluid w-100" />
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 p-2 align-items-center">
+          <img src="img/tanya-the-evil.jpg" class="img-fluid w-100" />
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 p-2 align-items-center">
+          <img src="img/the-promised-neverland.jpg" class="img-fluid w-100" />
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 p-2 align-items-center">
+          <img src="img/wonder-egg-priority.jpg" class="img-fluid w-100" />
+        </div>
+      </div>
+      <!-- End Em Destaque -->
     </div>
   </main>
 </body>
