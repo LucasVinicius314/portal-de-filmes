@@ -13,6 +13,7 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -30,7 +31,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">lançamentos</a>
+            <a class="nav-link active" aria-current="page" href="#lancamentos">lançamentos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#destaque">em destaque</a>
@@ -39,7 +40,7 @@
             <a class="nav-link" aria-current="page" href="#avaliacoes">avaliações</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#entrevistas">entrevistas & makingof</a>
+            <a class="nav-link" aria-current="page" href="#entrevistas">entrevistas & making of</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#novidades">novidades</a>
@@ -63,8 +64,8 @@
 
   <main>
     <!-- Lançamentos -->
-    <div class="container-fluid bg-light pt-3">
-      <h1 class="display-1 text-center mb-5">Lançamentos</h1>
+    <div class="container-fluid bg-light2 pt-3">
+      <h1 class="display-1 text-center mb-5" id="lancamentos">Lançamentos</h1>
       <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
@@ -284,7 +285,7 @@
         <form class="d-flex">
           <div class="input-group">
             <select class="form-control flex-shrink">
-              <option value="todos">TODOS</option>
+              <option value="todos" selected>TODOS</option>
               <option value="aventura">AVENTURA</option>
               <option value="romance">ROMANCE</option>
               <option value="comedia">COMÉDIA</option>
@@ -309,8 +310,319 @@
           <img src="img/wonder-egg-priority.jpg" class="img-fluid w-100" />
         </div>
       </div>
+      <div class="row">
+        <div class="col-12 py-3">
+          <div class="d-flex flex-row-reverse">
+            <button type="button" class="btn btn-secondary">
+              <span class="mdi mdi-plus"></span>
+              Carregar mais filmes</button>
+          </div>
+        </div>
+      </div>
       <!-- End Em Destaque -->
+      <!-- Últimas Avaliações -->
+      <div class="d-flex flex-row justify-content-between">
+        <h1 class="display-6 flex-grow" id="avaliacoes">Últimas avaliações</h1>
+      </div>
+      <div class="row">
+        <!-- Avaliação 1 -->
+        <div class="col-12 col-sm-6 col-lg-4 p-2 align-items-center">
+          <div class="row">
+            <div class="col-3">
+              <img src="img/favicon.png" class="img-fluid rounded-circle w-100" />
+            </div>
+            <div class="col-9">
+              <h3>Sure</h3>
+              <p><b>Avaliação: </b> Sem palavras, mudou minha vida</p>
+              <div class="d-flex justify-content-between flex-wrap">
+                <div class="d-flex flex-row flex-grow">
+                  <span class="mdi mdi-star"></span>
+                  <span class="mdi mdi-star-outline"></span>
+                  <span class="mdi mdi-star-outline"></span>
+                  <span class="mdi mdi-star-outline"></span>
+                  <span class="mdi mdi-star-outline"></span>
+                </div>
+                <div class="d-flex">
+                  <p><b>04/10/2020</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Avaliação 1 -->
+        <!-- Avaliação 2-->
+        <div class="col-12 col-sm-6 col-lg-4 p-2 align-items-center">
+          <div class="row">
+            <div class="col-3">
+              <img src="img/canada.jpg" class="img-fluid rounded-circle w-100" />
+            </div>
+            <div class="col-9">
+              <h3>Canadá</h3>
+              <p><b>Avaliação: </b> Segundo episódio, tão ruim quanto o primeiro</p>
+              <div class="d-flex justify-content-between flex-wrap">
+                <div class="d-flex flex-row flex-grow">
+                  <span class="mdi mdi-star"></span>
+                  <span class="mdi mdi-star-outline"></span>
+                  <span class="mdi mdi-star-outline"></span>
+                  <span class="mdi mdi-star-outline"></span>
+                  <span class="mdi mdi-star-outline"></span>
+                </div>
+                <div class="d-flex">
+                  <p><b>11/10/2020</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Avaliação 2 -->
+        <!-- Avaliação 3 -->
+        <div class="col-12 col-sm-6 col-lg-4 p-2 align-items-center">
+          <div class="row">
+            <div class="col-3">
+              <img src="img/sus.jpg" class="img-fluid rounded-circle w-100" />
+            </div>
+            <div class="col-9">
+              <h3>Imposter</h3>
+              <p><b>Avaliação: </b> SUS SUS SUS!</p>
+              <div class="d-flex justify-content-between flex-wrap">
+                <div class="d-flex flex-row flex-grow">
+                  <span class="mdi mdi-star"></span>
+                  <span class="mdi mdi-star"></span>
+                  <span class="mdi mdi-star"></span>
+                  <span class="mdi mdi-star"></span>
+                  <span class="mdi mdi-star"></span>
+                </div>
+                <div class="d-flex">
+                  <p><b>15/01/2021</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Avaliação 3 -->
+      </div>
+      <div class="row">
+        <div class="col-12 py-3">
+          <div class="d-flex flex-row-reverse">
+            <button type="button" class="btn btn-secondary">
+              <span class="mdi mdi-plus"></span>
+              Carregar mais avaliações</button>
+          </div>
+        </div>
+      </div>
+      <!-- End Últimas Avaliações -->
     </div>
+    <!-- Entrevistas -->
+    <div class="container-fluid bg-light2 pt-3">
+      <div class="container">
+        <div class="d-flex flex-row justify-content-between">
+          <h1 class="display-6 flex-grow" id="entrevistas">Entrevistas & Making of</h1>
+        </div>
+        <div class="row">
+          <!-- Item 1 -->
+          <div class="col-12 col-sm-6 col-lg-4 p-2 align-items-center">
+            <div class="row">
+              <div class="col-12">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="w-100" height="200" src="https://www.youtube.com/embed/SA7ZOoeisYk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-12">
+                <p class="fs-3"><b>Filme: </b> Your Name</p>
+                <p class="mb-0"><b>Diretor: </b> Makoto Shinkai</p>
+                <div class="d-flex flex-row flex-wrap">
+                  <div class="me-2">
+                    <p class="mb-0"><b>Roteiro: </b> Makoto Shinkai</p>
+                  </div>
+                  <div>
+                    <p><b>Estreia: </b> 2016</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Item 1 -->
+          <!-- Item 2 -->
+          <div class="col-12 col-sm-6 col-lg-4 p-2 align-items-center">
+            <div class="row">
+              <div class="col-12">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="w-100" height="200" src="https://www.youtube.com/embed/6x0DDONLNlE"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-12">
+                <p class="fs-3"><b>Filme: </b> 5 Centimeters Per Second</p>
+                <p class="mb-0"><b>Diretor: </b> Makoto Shinkai</p>
+                <div class="d-flex flex-row flex-wrap">
+                  <div class="me-2">
+                    <p class="mb-0"><b>Roteiro: </b> Makoto Shinkai</p>
+                  </div>
+                  <div>
+                    <p><b>Estreia: </b> 2007</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Item 2 -->
+          <!-- Item 3 -->
+          <div class="col-12 col-sm-6 col-lg-4 p-2 align-items-center">
+            <div class="row">
+              <div class="col-12">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="w-100" height="200" src="https://www.youtube.com/embed/ZJ7ymWBf7XE"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-12">
+                <p class="fs-3"><b>Filme: </b> Spirited Away</p>
+                <p class="mb-0"><b>Diretor: </b> Hayao Miyazaki</p>
+                <div class="d-flex flex-row flex-wrap">
+                  <div class="me-2">
+                    <p class="mb-0"><b>Roteiro: </b> Hayao Miyazaki</p>
+                  </div>
+                  <div>
+                    <p><b>Estreia: </b> 2003</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Item 3 -->
+        </div>
+        <div class="row">
+          <div class="col-12 py-3">
+            <div class="d-flex flex-row-reverse">
+              <button type="button" class="btn btn-secondary">
+                <span class="mdi mdi-plus"></span>
+                Carregar mais filmes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Entrevistas -->
+    <div class="container pt-4 pb-4">
+      <div class="row">
+        <div class="col-12 col-md-9">
+          <!-- Novidades -->
+          <h1 class="display-6 flex-grow" id="novidades">Novidades</h1>
+          <div class="row">
+            <!-- Item 1 -->
+            <div class="col-12">
+              <div class="row">
+                <div class="col-4">
+                  <img src="img/rent-a-girlfriend.webp" class="img-fluid rounded w-100" />
+                </div>
+                <div class="col-8">
+                  <h2>Segunda temporada de Kanojo Okarishimasu</h2>
+                  <p>Hoje (25), o produtor havia feito um apelo para vender mais DVD/BD, e o twitter oficial da
+                    adaptação para série anime do mangá “Kanojo Okarishimasu” (Rent-A-Girlfriend) de Reiji Miyajima
+                    acaba de anunciar que foi aprovada uma segunda temporada.
+                  </p>
+                  <div>
+                    <span class="badge rounded-pill bg-secondary me-1">Nova temporada</span>
+                    <span class="badge rounded-pill bg-secondary me-1">Confirmado</span>
+                    <span class="badge rounded-pill bg-secondary me-1">Em alta</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Item 1 -->
+            <!-- Divider -->
+            <hr class="my-4">
+            <!-- End Divider -->
+            <!-- Item 2 -->
+            <div class="col-12">
+              <div class="row">
+                <div class="col-4">
+                  <img src="img/favicon.png" class="img-fluid rounded w-100" />
+                </div>
+                <div class="col-8">
+                  <h2>Titulo</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit assumenda obcaecati iure sit nobis
+                    eos iste, maxime magnam, ut in sed enim nam? Repellat architecto suscipit dolorum ut sequi eaque.
+                  </p>
+                  <div>
+                    <span class="badge rounded-pill bg-secondary me-1">Secondary</span>
+                    <span class="badge rounded-pill bg-secondary me-1">Secondary</span>
+                    <span class="badge rounded-pill bg-secondary me-1">Secondary</span>
+                    <span class="badge rounded-pill bg-secondary me-1">Secondary</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Item 2 -->
+            <!-- Divider -->
+            <hr class="my-4">
+            <!-- End Divider -->
+            <!-- Item 3 -->
+            <div class="col-12">
+              <div class="row">
+                <div class="col-4">
+                  <img src="img/favicon.png" class="img-fluid rounded w-100" />
+                </div>
+                <div class="col-8">
+                  <h2>Titulo</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit assumenda obcaecati iure sit nobis
+                    eos iste, maxime magnam, ut in sed enim nam? Repellat architecto suscipit dolorum ut sequi eaque.
+                  </p>
+                  <div>
+                    <span class="badge rounded-pill bg-secondary me-1">Secondary</span>
+                    <span class="badge rounded-pill bg-secondary me-1">Secondary</span>
+                    <span class="badge rounded-pill bg-secondary me-1">Secondary</span>
+                    <span class="badge rounded-pill bg-secondary me-1">Secondary</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Item 3 -->
+          </div>
+          <!-- End Novidades -->
+        </div>
+        <div class="col-12 col-md-3">
+          <!-- Sobre -->
+          <h1 class="display-6 flex-grow" id="sobre">Sobre</h1>
+          <p>Incididunt velit elit velit non. Sit ad ad consectetur irure adipisicing. Deserunt enim ea ullamco sint
+            commodo aliquip sit commodo. Magna Lorem consequat anim anim est ad aliquip duis reprehenderit proident
+            mollit velit. Ipsum nostrud laboris sit quis velit commodo nostrud eu esse proident occaecat. Cillum ex
+            cupidatat est aute culpa Lorem consequat ea. Voluptate excepteur veniam commodo exercitation esse cillum
+            consequat sunt id.</p>
+          <!-- End Sobre -->
+          <!-- Editorial -->
+          <h1 class="display-6 flex-grow" id="editorial">Editorial</h1>
+          <!-- End Editorial -->
+          <!-- Social -->
+          <h1 class="display-6 flex-grow fs-3" id="social">redes sociais:</h1>
+          <!-- End Social -->
+        </div>
+      </div>
+    </div>
+    <footer class="container-fluid bg-light2 py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-9">
+            <div class="d-flex align-items-center h-100">
+              <h3 id="footer-text" class="display-4 fs-3">Copyright 2020 - Sure</h3>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="d-flex w-100 flex-row-reverse">
+              <img src=" img/favicon.png" height="80" width="80" class="rounded-circle" />
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </footer>
   </main>
 </body>
 
