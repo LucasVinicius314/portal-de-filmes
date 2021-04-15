@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SureTV</title>
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="img/favicon.png" alt="" width="30" height="30" class="d-inline-block align-text-top mr-2">
+        SureTV
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">lançamentos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#destaque">em destaque</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#avaliacoes">avaliações</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#entrevistas">entrevistas & makingof</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#novidades">novidades</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <div class="input-group">
+            <button class="btn btn-outline-secondary" type="button">
+              <span class="mdi mdi-magnify"></span>
+            </button>
+            <input type="text" class="form-control" placeholder="Pesquisar filme" aria-label="Pesquisar">
+            <button class="btn btn-outline-secondary" type="button">
+              <span class="mdi mdi-close"></span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+  <main>
+    <div class="container-fluid bg-light pt-3">
+      <!-- Lançamentos -->
+      <h1 class="display-1 text-center mb-5">Lançamentos</h1>
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <!-- Erased -->
+          <div class="carousel-item active" data-bs-interval="10000">
+            <div class="row mb-5">
+              <div class="col-12 col-md-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="w-100" height="320" src="https://www.youtube.com/embed/fodAJ-1dN3I"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <h1>Erased</h1>
+                <p><b>Sinopse: </b> Satoru Fujinuma é nosso protagonista. É um adulto de 29 anos que sonha em
+                  ser mangaká, mas enquanto não realiza seu sonho trabalha como entregador de pizza. Satoru leva sua
+                  vida sem grande entusiasmo apesar de conseguir voltar no tempo por 1 ou 5 minutos, normalmente para
+                  evitar que algo ruim aconteça.</p>
+                <div class="row">
+                  <div class="col-12 col-md-4">
+                    <p><b>Diretor: </b> Kenta Suzuki</p>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <p><b>Roteiro: </b> Taku Kishimoto</p>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <p><b>Estreia: </b> 2016</p>
+                  </div>
+                  <div class="col-12">
+                    <p><b>Elenco: </b></p>
+                  </div>
+                  <div class="col-12">
+                    <p><small>Shinnosuke Mitsushima | Chinatsu Akasaki | Minami Takayama | Aoi Yūki</small></p>
+                  </div>
+                  <div class="col-12">
+                    <p><b>Avaliação: </b></p>
+                  </div>
+                  <div class="col-12">
+                    <span class="mdi mdi-star"></span>
+                    <span class="mdi mdi-star"></span>
+                    <span class="mdi mdi-star"></span>
+                    <span class="mdi mdi-star"></span>
+                    <span class="mdi mdi-star"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Erased -->
+          <!-- Weathering With You -->
+          <div class="carousel-item" data-bs-interval="10000">
+            <div class="row mb-5">
+              <div class="col-12 col-md-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="w-100" height="320" src="https://www.youtube.com/embed/Q6iK6DjV_iE"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <h1>Weathering With You</h1>
+                <p><b>Sinopse: </b> O estudante do ensino médio Hodaka Morishima deixa seu lar numa ilha isolada e se
+                  muda pra Tóquio. Vive seus dias em isolamento, mas finalmente encontra um emprego como escritor para
+                  uma revista obscura ocultista. Depois de começar seu trabalho, o tempo fica chuvoso dia após dia. Em
+                  um canto da cidade cheia e agitada, Hodaka conhece uma garota chamada Hina Amano. Devido a certas
+                  circunstâncias, Hina e seu irmão mais novo vivem juntos, mas têm uma vida alegre e resistente. Hina
+                  também tem um certo poder: o poder de fazer parar de chover e limpar o céu.</p>
+                <div class="row">
+                  <div class="col-12 col-md-4">
+                    <p><b>Diretor: </b> Makoto Shinkai</p>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <p><b>Roteiro: </b> Makoto Shinkai</p>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <p><b>Estreia: </b> 2019</p>
+                  </div>
+                  <div class="col-12">
+                    <p><b>Elenco: </b></p>
+                  </div>
+                  <div class="col-12">
+                    <p><small>Kotaro Daigo | Nana Mori | Shun Oguri | Sei Hiraizumi</small></p>
+                  </div>
+                  <div class="col-12">
+                    <p><b>Avaliação: </b></p>
+                  </div>
+                  <div class="col-12">
+                    <span class="mdi mdi-star"></span>
+                    <span class="mdi mdi-star"></span>
+                    <span class="mdi mdi-star"></span>
+                    <span class="mdi mdi-star"></span>
+                    <span class="mdi mdi-star-half-full"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Weathering With You -->
+          <!-- A Silent Voice -->
+          <div class="carousel-item" data-bs-interval="10000">
+            <div class="row mb-5">
+              <div class="col-12 col-md-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="w-100" height="320" src="https://www.youtube.com/embed/nfK6UgLra7g"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <h1>A Silent Voice</h1>
+                <p><b>Sinopse: </b> Nishimiya Shoko é uma aluna da escola primária que está cansada de sofrer bullying
+                  por ser deficiente auditiva. Transferida para uma nova escola, ela passa a ser constantemente
+                  intimidada pelos colegas, principalmente pelo jovem Ishida Shouya. Depois que ela precisa novamente
+                  mudar de instituição de ensino por causa dele, Shouya é condenado ao ostracismo e fica sem amigos.
+                  Tempos depois, ele vai tentará obter redenção.
+                </p>
+                <div class="row">
+                  <div class="col-12 col-md-4">
+                    <p><b>Diretor: </b> Naoko Yamada</p>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <p><b>Roteiro: </b> Yoshitoki Ōima</p>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <p><b>Estreia: </b> 2016</p>
+                  </div>
+                  <div class="col-12">
+                    <p><b>Elenco: </b></p>
+                  </div>
+                  <div class="col-12">
+                    <p><small>Saori Hayami | Miyu Irino | Yui Ishikawa | Kensho Ono</small></p>
+                  </div>
+                  <div class="col-12">
+                    <p><b>Avaliação: </b></p>
+                  </div>
+                  <div class="col-12">
+                    <span class="mdi mdi-star"></span>
+                    <span class="mdi mdi-star"></span>
+                    <span class="mdi mdi-star"></span>
+                    <span class="mdi mdi-star"></span>
+                    <span class="mdi mdi-star-outline"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End A Silent Voice -->
+          <!-- A Whisker Away -->
+          <div class="carousel-item" data-bs-interval="10000">
+            <div class="row mb-5">
+              <div class="col-12 col-md-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="w-100" height="320" src="https://www.youtube.com/embed/aXc9DVfLTGo"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <h1>A Whisker Away</h1>
+                <p><b>Sinopse: </b> "A Whisker Away" é uma história original sobre Miyo Sasaki, uma jovem estudante do
+                  liceu que se apaixonou por Kento Hinode, seu colega de turma. Sakaki acompanha os passos de Hinode sem
+                  conseguir conquistar a sua atenção ou afecto, algo que apenas conseguirá de uma forma inesperada.
+                </p>
+                <div class="row">
+                  <div class="col-12 col-md-4">
+                    <p><b>Diretor: </b> Junichi Sato</p>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <p><b>Roteiro: </b> Tomotaka Shibayama</p>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <p><b>Estreia: </b> 2020</p>
+                  </div>
+                  <div class="col-12">
+                    <p><b>Elenco: </b></p>
+                  </div>
+                  <div class="col-12">
+                    <p><small>Bryce Papenbrook | Natsuki Hanae | Cristina Vee | Keith Silverstein</small></p>
+                  </div>
+                  <div class="col-12">
+                    <p><b>Avaliação: </b></p>
+                  </div>
+                  <div class="col-12">
+                    <span class="mdi mdi-star"></span>
+                    <span class="mdi mdi-star"></span>
+                    <span class="mdi mdi-star"></span>
+                    <span class="mdi mdi-star"></span>
+                    <span class="mdi mdi-star-half-full"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End A Whisker Away -->
+        </div>
+      </div>
+      <!-- End Lançamentos -->
+    </div>
+  </main>
+</body>
+
+</html>
