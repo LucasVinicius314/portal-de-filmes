@@ -1,3 +1,35 @@
 .bg-light2 {
   background-color: rgb(240, 240, 240);
 }
+
+.bg-custom {
+  background: linear-gradient(
+    -45deg,
+    purple,
+    #ee7752,
+    #e73c7e,
+    #23d5ab,
+    #23a6d5,
+    yellow
+  );
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 60%;
+  }
+  50% {
+    background-position: 0% 50%;
+  }
+  75% {
+    background-position: 50% 40%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
