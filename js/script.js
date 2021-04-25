@@ -22,6 +22,6 @@ const setSize = () => {
     $('.carousel-inner>div:nth(1)').height(),
     $('.carousel-inner>div:nth(2)').height(),
     $('.carousel-inner>div:nth(3)').height(),
-  ].sort()
-  $('.carousel-inner').height(heights[heights.length - 1])
+  ].sort((a, b) => b - a)
+  $('.carousel-inner').height(heights[0])
 }
