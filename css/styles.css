@@ -33,3 +33,46 @@
     background-position: 0% 50%;
   }
 }
+
+.custom {
+  bottom: 0px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom:hover {
+  bottom: 6px;
+}
+
+.mdi {
+  font-size: 18px;
+}
+
+#search-panel {
+  pointer-events: none;
+  z-index: 99;
+}
+
+#search-panel > * {
+  pointer-events: all;
+}
+
+#search-list > div:nth-child(even) {
+  background-color: rgb(243, 243, 243);
+}
+
+#search-list > div:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.search-img {
+  height: 160px;
+  width: 100px;
+}
+
+#img-cover {
+  height: 300px;
+  object-fit: cover;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SureTV</title>
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/read.js"></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <img src="img/favicon.png" alt="" width="30" height="30"
+          class="d-inline-block align-text-top rounded-circle mr-2">
+        SureTV
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+  <main class="bg-custom">
+    <!-- Lançamentos -->
+    <img id="img-cover" class="img-fluid w-100" src="" alt="" srcset="">
+    <!-- End Lançamentos -->
+    <div class="container bg-light pt-4 pb-3">
+      <!-- Em Destaque -->
+      <div class="">
+        <div class="p-2">
+          <div class="d-flex flex-row justify-content-between">
+            <h1 class="display-6" id="titulo"></h1>
+          </div>
+          <small id="original"></small>
+          <small id="ano"></small>
+        </div>
+        <hr class="mb-3">
+        <div class="card mx-2 mb-3 shadow">
+          <div class="card-body">
+            <h6 class="mb-3">Sinopse</h6>
+            <p id="sinopse"></p>
+            <a id="button" class="btn btn-primary" href="">
+              Ver no site
+            </a>
+          </div>
+        </div>
+        <div class="card mx-2 mb-3 shadow">
+          <div class="card-body">
+            <h6 class="mb-3">Informações</h6>
+            <p id="ep"></p>
+            <p id="se"></p>
+          </div>
+        </div>
+        <div class="p-2">
+          <a href="/" class="btn btn-link">Voltar</a>
+        </div>
+      </div>
+      <!-- End Últimas Avaliações -->
+    </div>
+    <footer class="container-fluid bg-light2 py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-9">
+            <div class="d-flex align-items-center h-100">
+              <h3 id="footer-text" class="display-4 fs-3">By Sure, 2021</h3>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="d-flex w-100 flex-row-reverse">
+              <img src=" img/favicon.png" height="80" width="80" class="rounded-circle shadow" />
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </footer>
+  </main>
+</body>
+
+</html>

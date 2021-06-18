@@ -14,13 +14,14 @@
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/app.js"></script>
 </head>
 
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="/">
         <img src="img/favicon.png" alt="" width="30" height="30"
           class="d-inline-block align-text-top rounded-circle mr-2">
         SureTV
@@ -52,8 +53,8 @@
             <button class="btn btn-outline-secondary" type="button">
               <span class="mdi mdi-magnify"></span>
             </button>
-            <input type="text" class="form-control" placeholder="Pesquisar filme" aria-label="Pesquisar">
-            <button class="btn btn-outline-secondary" type="button">
+            <input id='search' type="text" class="form-control" placeholder="Pesquisar filme" aria-label="Pesquisar">
+            <button id="clear" class="btn btn-outline-secondary" type="button">
               <span class="mdi mdi-close"></span>
             </button>
           </div>
@@ -63,6 +64,18 @@
   </nav>
   <!-- End Navbar -->
   <main class="bg-custom">
+    <section id="search-panel" class="position-absolute w-100 py-2">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6"></div>
+          <div class="col-md-6">
+            <div class="card overflow-hidden">
+              <div id="search-list"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Lançamentos -->
     <div class="container-fluid bg-light2 pt-3">
       <h1 class="display-1 text-center mb-5" id="lancamentos">Lançamentos</h1>
@@ -280,8 +293,8 @@
     <div class="container pt-4">
       <!-- Em Destaque -->
       <div class="d-flex flex-row justify-content-between">
-        <h1 class="display-6 flex-grow" id="destaque">Em destaque</h1>
-        <form class="d-flex">
+        <h1 class="display-6 flex-grow" id="destaque">Mais populares</h1>
+        <!-- <form class="d-flex">
           <div class="input-group">
             <select class="form-control flex-shrink">
               <option value="todos" selected>TODOS</option>
@@ -293,13 +306,13 @@
               <span class="mdi mdi-chevron-down"></span>
             </button>
           </div>
-        </form>
+        </form> -->
       </div>
-      <div class="row">
-        <div class="col-12 col-sm-6 col-lg-3 p-2 align-items-center">
+      <div class="row" id='mais-populares'>
+        <!-- <div class="col-12 col-sm-6 col-lg-3 p-2 align-items-center">
           <img src="img/kaguya-sama.jpg" class="img-fluid rounded w-100" />
-        </div>
-        <div class="col-12 col-sm-6 col-lg-3 p-2 align-items-center">
+        </div> -->
+        <!-- <div class="col-12 col-sm-6 col-lg-3 p-2 align-items-center">
           <img src="img/tanya-the-evil.jpg" class="img-fluid rounded w-100" />
         </div>
         <div class="col-12 col-sm-6 col-lg-3 p-2 align-items-center">
@@ -307,9 +320,9 @@
         </div>
         <div class="col-12 col-sm-6 col-lg-3 p-2 align-items-center">
           <img src="img/wonder-egg-priority.jpg" class="img-fluid rounded w-100" />
-        </div>
+        </div> -->
       </div>
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-12 py-3">
           <div class="d-flex flex-row-reverse">
             <button type="button" class="btn btn-secondary">
@@ -317,7 +330,7 @@
               Carregar mais filmes</button>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- End Em Destaque -->
       <!-- Últimas Avaliações -->
       <div class="d-flex flex-row justify-content-between">
@@ -378,10 +391,10 @@
         <div class="col-12 col-sm-6 col-lg-4 py-2 align-items-center">
           <div class="row h-100">
             <div class="col-3">
-              <img src="img/sus.jpg" class="img-fluid rounded-circle w-100" />
+              <img src="img/amogus.png" class="img-fluid rounded-circle w-100" />
             </div>
             <div class="col-9 d-flex flex-column">
-              <h3>Imposter</h3>
+              <h3>Amogus</h3>
               <p class="flex-grow-1"><b>Avaliação: </b> SUS SUS SUS!</p>
               <div class="d-flex justify-content-between flex-wrap">
                 <div class="d-flex flex-row flex-grow align-items-center fs-4">
@@ -400,7 +413,7 @@
         </div>
         <!-- End Avaliação 3 -->
       </div>
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-12 py-3">
           <div class="d-flex flex-row-reverse">
             <button type="button" class="btn btn-secondary">
@@ -408,7 +421,7 @@
               Carregar mais avaliações</button>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- End Últimas Avaliações -->
     </div>
     <!-- Entrevistas -->
@@ -496,15 +509,6 @@
             </div>
           </div>
           <!-- End Item 3 -->
-        </div>
-        <div class="row">
-          <div class="col-12 py-3">
-            <div class="d-flex flex-row-reverse">
-              <button type="button" class="btn btn-secondary">
-                <span class="mdi mdi-plus"></span>
-                Carregar mais filmes</button>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -630,7 +634,7 @@
           </div>
           <div class="col-3">
             <div class="d-flex w-100 flex-row-reverse">
-              <img src=" img/favicon.png" height="80" width="80" class="rounded-circle" />
+              <img src="img/favicon.png" height="80" width="80" class="rounded-circle shadow" />
             </div>
           </div>
         </div>
