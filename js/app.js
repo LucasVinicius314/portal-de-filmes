@@ -120,7 +120,3 @@ $(async () => {
     }, 1000)
   })
 })
-
-// $.get(`${baseUrl}/tv/${id}?${key}`).then(({ homepage }) => {
-//   location = homepage
-// })
